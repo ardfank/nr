@@ -1,4 +1,3 @@
-<form method="post">
  <input name="url" size="50" />
  <input name="submit" type="submit" />
  </form>
