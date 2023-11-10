@@ -1,11 +1,3 @@
- <input name="url" size="50" />
- <input name="submit" type="submit" />
- </form>
- <?php
- if (!isset($_POST['submit'])) die();
- $destination_folder = 'mydownloads/';
- $url = $_POST['url'];
- $newfname = $destination_folder . basename($url);
  $file = fopen ($url, "rb");
  if ($file) {
  $newf = fopen ($newfname, "wb");
